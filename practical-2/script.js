@@ -4,7 +4,6 @@ async function showEarthquakes() {
         "onEachFeature":function(feature, marker){
             // feature -- stores the information about the feature
             // layer -- is the line or shape that is being drawn onto the map
-            L.marker([feature.geometry.coordinates[0], feature.geometry.coordinates[1]]);
             marker.bindPopup(feature.properties.place)
         }
     }).addTo(map)
