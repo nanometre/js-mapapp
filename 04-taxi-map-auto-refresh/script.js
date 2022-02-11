@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", async function(){
    let timePassed = 0;
    setInterval(function(){
     timePassed++;
-    console.log(timePassed % 30);
+    console.log(timePassed % 35);
    }, 1000);
 });
 
